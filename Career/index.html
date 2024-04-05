@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <title>Future of Gaming</title>
+</head>
+<body>
+  <div class = "banner">
+      <div class="navbar">
+          <img src="logo.png" class="logo">
+        <video autoplay muted loop id="myVideo">
+            <source src="cinematic.mp4" type="video/mp4">
+        </video>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../About/index.html">About</a></li>
+            <li><a href="../Future/index.html">Future</a></li>
+            <li class="active"><a href="#">Career</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>CAREERS</h1>
+        <p>The ideal job starts here,<br>Find out what you can do and how you can make your career.</p>
+        <div>
+            <a href="../index.html"><button type="button"><span></span>HOME</button></a>
+            <a href="../About/index.html"><button type="button"><span></span>ABOUT US</button></a>
+        </div>
+      </div>
+  </div>
+    <section>
+        <video id="slider" autoplay muted loop>
+            <source src="int.mp4" type="video/mp4">
+        </video>
+        <div class="overlay">
+            <div class="inner">
+                <h1>Dota 2 The International</h1>
+                <h3>The International, often abbreviated as TI, is an annual tournament organized by Valve. In 2015 Valve increased their number of hosted events, founding the Dota Major Championships which incorporates The International into its structure. The International remains the biggest and most prestigious event on the Dota Pro Circuit. The prize pool for 2021 was $40 million, which surpasses any other esport tournament.</h3>
+                <a href="https://liquipedia.net/dota2/The_International"><button type="button"><span></span>INTERNATIONAL</button></a>
+            </div>
+        </div>
+        <ul class="navigation">
+            <li onClick="videoUrl('int.mp4')"><img src="thumb.webp"></li>
+            <li onClick="videoUrl('valo.mp4')"><img src="valorant.webp"></li>
+            <li onClick="videoUrl('lol.mp4')"><img src="lol.webp"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function videoUrl(hmmmmmm){
+            document.getElementById("slider").src = hmmmmmm;
+        }
+        window.addEventListener('scroll', function(){
+            let num = (window.scrollY/window.innerHeight)+3;
+            
+            document.getElementById('myVideo').style.webkitFilter = 'blur('
+            + num + 'px)'
+        })
+    </script>
+    <footer class="footer">
+        <div class="container1">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>about</h4>
+                    <ul>
+                        <li><a href="index.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">email us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social media</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/denis.stobert.1/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/StobertDenis"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/denis.stobert/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

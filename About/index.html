@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <title>About</title>
+</head>
+<body>
+  <div class = "banner">
+      <div class="navbar">
+        <img src="logo.png" class="logo">
+        <video autoplay muted loop id="myVideo">
+            <source src="cinematic.mp4" type="video/mp4">
+        </video>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="../Future/index.html">Future</a></li>
+            <li><a href="../Career/index.html">Career</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>THE LIFE OF GAMERS</h1>
+        <p>Become one with the gamers and find out their lifestyle.</p>
+        <div>
+            <a href="#section1"><button type="button"><span></span>LEARN MORE</button></a>
+            <a href="../Future/index.html"><button type="button"><span></span>FUTURE</button></a>
+        </div>
+      </div>
+  </div>
+    
+    <section class="about" id="section1" data-aos="zoom-out" data-aos-duration="1000">
+        <h1>The History</h1>
+        <h3>The 50s: The age of computers begins</h3>
+        <p>The first actual multiplayer game was presented in 1958 by the then head of "Instrumentation Higinbotham" at the open day. It was called "Tennis for Two" and allowed two people to play against each other. The game was played with an early form of the joystick, which allowed players to hit the ball over the net and adjust its trajectory. Today, this title is considered by many to be the birth of eSports.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Dota 2</h3>
+                <p>Every day, millions of players worldwide enter the battle as one of over a hundred Dota Heroes in a 5v5 team clash. Dota is the deepest multi-player action RTS game ever made and there's always a new strategy or tactic to discover. It's completely free to play and always will be – start defending your ancient now.</p>
+                <a href="https://www.dota2.com/"><button><span></span>Visit Now</button></a>
+            </div>
+            <div class="course-val">
+                <h3>Valorant</h3>
+                <p>Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.</p>
+                <a href="https://playvalorant.com/en-us/"><button><span></span>Visit Now</button></a>
+            </div>
+            <div class="course-lol">
+                <h3>League of Legends</h3>
+                <p>League of Legends is one of the world's most popular video games, developed by Riot Games. It features a team-based competitive game mode based on strategy and outplaying opponents. Players work with their team to break the enemy Nexus before the enemy team breaks theirs.</p>
+                <a href="https://www.leagueoflegends.com/en-us/"><button><span></span>Visit Now</button></a>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script type="text/javascript">
+        $('section').mousemove(function(e){
+            var moveX = (e.pageX * -1 / 15);
+            var moveY = (e.pageY * -1 / 15);
+            $(this).css('background-position', moveX + 'px ' + moveY + 'px')
+        })
+    </script>
+    <footer class="footer">
+        <div class="container1">
+            <div class="row1">
+                <div class="footer-col">
+                    <h4>about</h4>
+                    <ul>
+                        <li><a href="index.html">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">email us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>social media</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/denis.stobert.1/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/StobertDenis"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/denis.stobert/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
